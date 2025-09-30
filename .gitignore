@@ -1,0 +1,32 @@
+/server1/venv/
+/server2/venv/
+venv/
+myenv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Frontend dependency folder
+/frontend/node_modules/
+
+# Secret config files ko ignore karein
+/server1/config.py
+/server2/config.py
+
+# Frontend build output folder
+/frontend/dist/
+
+# Local environment files
+.env
+.env.local
+/frontend/.env
+/frontend/.env.local
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

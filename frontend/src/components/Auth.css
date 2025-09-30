@@ -1,0 +1,160 @@
+/* frontend/src/components/Auth.css */
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:-5rem;
+  color: white;
+  background: rgba(18, 23, 33, 0.4);
+  padding: 2rem 3.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 300px;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(9, 172, 175, 0.37);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.auth-container h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #40ff00ff;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.auth-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  max-width: 220px;
+  width: 100%;  
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.auth-input::placeholder {
+  color: rgba(255, 255, 255, 0.97);
+}
+
+.auth-input:focus {
+  border-color: #00ffff;
+}
+
+.signup-auth-button {
+  background-color: #00ffff;
+  color: #111;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 8px;
+  max-width: 140px;
+  max-height: 50px;
+  height: 100%;
+  width: 100%;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+
+
+.signup-auth-button:hover {
+  background-color: #00e0e0;
+}
+
+
+.login-auth-button {
+  background-color: #00ffff;
+  color: #111;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  max-width: 140px;
+  max-height: 50px;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+
+
+.login-auth-button:hover {
+  background-color: #00e0e0;
+}
+
+
+.back-btn{
+  background-color: #00ffff;
+  color: #111;
+  border: none;
+  padding:0.5rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.back-btn:hover{
+  background-color: #00e0e0;
+  color: #111;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+
+/* --- MOBILE RESPONSIVE STYLES --- */
+
+@media (max-width: 768px) {
+    .auth-container {
+        max-width: 55vw;
+        width: 80%;
+        padding: 2.5rem;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left:-44px;
+        margin-top:-80px;
+    }
+    .auth-container h1 {
+      margin:auto;
+      margin-bottom: 1.2rem;
+    }
+}

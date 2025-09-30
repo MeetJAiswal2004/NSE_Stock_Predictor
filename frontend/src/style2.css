@@ -1,0 +1,125 @@
+/* style2.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    overflow: hidden;
+  } 
+  
+.content-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 750px;
+  max-height: 75vh;
+  overflow-y: auto;
+  color: white;
+  text-align: left;
+  scroll-behavior: smooth;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Optional: scrollbar style for better UI */
+.content-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content-box::-webkit-scrollbar-thumb {
+  background-color: #00ffff;
+  border-radius: 3px;
+}
+
+.content-box::-webkit-scrollbar-track {
+  background: transparent;
+} 
+
+hr.custom-hr {
+  width: 50%;
+  border: none;
+  border-top: 2px solid #00ffff;
+  margin: 20px auto;
+}
+
+/* Indicators red color */
+.indicators ul li {
+  color: #72f805;
+  margin-bottom: 15px;
+}
+
+.back-btn {
+  text-decoration: none;
+  font-size: 18px;
+  color: #00ffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Arrow icon style */
+.back-btn .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* On hover, rotate arrow from ◀ to ▼ */
+.back-btn:hover .arrow{
+  transform: rotate(-90deg);
+}
+
+/* Optional: Change color on hover */
+.back-btn:hover {
+  color: white;
+}
+
+
+h3{
+  color: rgb(252, 7, 142);
+  font-size: 20px;
+}
+  
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* --- MOBILE RESPONSIVE STYLES --- */
+
+@media (max-width: 768px) {
+    .content-box {
+        width: 80%;
+        padding: 20px;
+        max-height: 76vh;
+        margin-top: 10vh;
+        margin-left:-44px;
+        margin-bottom:15vh;
+    
+    }
+}
