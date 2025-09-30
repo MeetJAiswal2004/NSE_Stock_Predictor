@@ -9,8 +9,6 @@ __pycache__/
 
 # Frontend dependency folder
 /frontend/node_modules/
-
-# Secret config files ko ignore karein
 /server1/config.py
 /server2/backend/config.py
 
