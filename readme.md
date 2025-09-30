@@ -20,15 +20,15 @@
 ## 🚀 Application Showcase
 
 <p align="center">
-  <img src="assets/Screenshot 2025-09-30 121024.png" alt="home Page" width="32%"/>
-  <img src="assets/Screenshot 2025-09-30 124929.png" alt="Terms & Conditions Page" width="32%"/>
-  <img src="assets/Screenshot 2025-09-30 121049.png" alt="sign_up_page" width="32%"/>
+  <img src="assets/Screenshot 2025-09-30 121024.png" alt="home Page" width="36%"/>
+  <img src="assets/Screenshot 2025-09-30 124929.png" alt="Terms & Conditions Page" width="36%"/>
+  <img src="assets/Screenshot 2025-09-30 121049.png" alt="sign_up_page" width="36%"/>
 </p>
 <p align="center">
   <img src="assets/Screenshot 2025-09-30 124823.png" alt="Prediction results and graph" width="48%"/>
+  <img src="assets/Screenshot 2025-09-30 120920.png" alt="About Us Page" width="48%"/>
 </p>
 <p align="center">
-  <img src="assets/Screenshot 2025-09-30 120920.png" alt="About Us Page" width="48%"/>
   <img src="assets/mobile_response2.jpg" alt="Responsive Mobile View with Toggle" width="48%"/>
   <img src="assets/mobile_response1.jpg" alt="Responsive Mobile graph View with Toggle" width="48%"/>
 </p>
@@ -71,26 +71,26 @@ This project stands out due to its robust, scalable, and high-performance archit
 The application is built on a distributed microservice model to ensure separation of concerns and independent scalability.
 
 
-      +-----------------------------------------+
-      |                                         |
-      |             React Frontend              |
-      |       (UI Hosted on Render.com)         |
-      |                                         |
-      +-------------------+---------------------+
-                          |
-                          | (HTTPS API Calls)
-           +--------------+--------------+
-           |                             |
-           v                             v
-+-------------------------+      +---------------------------+
-|                         |      |                           |
-|  Server 1: Auth Service |      | Server 2: Predict Service |
-|   (Flask + MongoDB)     |      |(Flask + TensorFlow + GPU) |
-|                         |      |                           |
-| Hosted on: Google Colab |      |  Hosted on: Google Colab  |
-|  Exposed via: Ngrok     |      |  Exposed via: Ngrok       |
-|                         |      |                           |
-+-------------------------+      +---------------------------+
+                +-----------------------------------------+
+                |                                         |
+                |             React Frontend              |
+                |       (UI Hosted on Render.com)         |
+                |                                         |
+                +-------------------+---------------------+
+                                    |
+                                    | (HTTPS API Calls)
+                     +--------------+--------------+
+                     |                             |
+                     v                             v
+          +-------------------------+      +---------------------------+
+          |                         |      |                           |
+          |  Server 1: Auth Service |      | Server 2: Predict Service |
+          |   (Flask + MongoDB)     |      |(Flask + TensorFlow + GPU) |
+          |                         |      |                           |
+          | Hosted on: Google Colab |      |  Hosted on: Google Colab  |
+          |  Exposed via: Ngrok     |      |  Exposed via: Ngrok       |
+          |                         |      |                           |
+          +-------------------------+      +---------------------------+
 
 ---
 

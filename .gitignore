@@ -12,7 +12,7 @@ __pycache__/
 
 # Secret config files ko ignore karein
 /server1/config.py
-/server2/config.py
+/server2/backend/config.py
 
 # Frontend build output folder
 /frontend/dist/
