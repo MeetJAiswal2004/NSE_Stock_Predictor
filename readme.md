@@ -190,64 +190,64 @@ To run this project, you need to set up and run the two backend servers and the 
 ## 📂 Project Structure
 
 
-NSE_STOCK_PREDICTOR/
-├── 📁 assets/
-│   ├── 🖼️ Screenshot 2025-0...png
-│   ├── 🖼️ Screenshot 2025-0...png
-│   ├── 🖼️ Screenshot 2025-0...png
-│   ├── 🖼️ Screenshot 2025-0...png
-│   ├── 🖼️ Screenshot 2025-0...png
-│   ├── 🖼️ Screenshot 2025-0...png
-│   └── 🖼️ Screenshot 2025-0...png
-│
-├── 📁 frontend/
-│   ├── 📁 node_modules/     (Ignored by git)
-│   ├── 📁 public/
-│   │   ├── 🖼️ bgvideo.mp4
-│   │   ├── 🖼️ favicon.png
-│   │   └── 🖼️ vite.svg
-│   ├── 📁 src/
-│   │   ├── 📁 assets/
-│   │   │   └── 🖼️ react.svg
-│   │   ├── 📁 components/
-│   │   │   ├── 📄 About.jsx
-│   │   │   ├── 📄 Auth.css
-│   │   │   ├── 📄 LoginPage.jsx
-│   │   │   ├── 📄 LoginPopup.css
-│   │   │   ├── 📄 LoginPopup.jsx
-│   │   │   ├── 📄 PanelToggle.jsx
-│   │   │   ├── 📄 SearchBar.jsx
-│   │   │   ├── 📄 SignupPage.jsx
-│   │   │   ├── 📄 StockChart.jsx
-│   │   │   ├── 📄 StockInfo.jsx
-│   │   │   ├── 📄 TermsPage.css
-│   │   │   └── 📄 TermsPage.jsx
-│   │   ├── 📄 App.css
-│   │   ├── 📄 App.jsx
-│   │   ├── 📄 config.js
-│   │   ├── 📄 index.css
-│   │   ├── 📄 main.jsx
-│   │   ├── 📄 style1.css
-│   │   └── 📄 style2.css
-│   ├── 📄 .gitignore
-│   ├── 📄 index.html
-│   ├── 📄 package-lock.json
-│   ├── 📄 package.json
-│   ├── 📄 README.md
-│   └── 📄 vite.config.js
-│
-├── 📁 server1/
-│   ├── 🐍 auth_app.py
-│   ├── 🐍 config.py
-│   └── 📄 requirements.txt
-│
-├── 📁 server2/
-│   ├── 📁 __pycache__/      (Ignored by git)
-│   ├── 🐍 config.py
-│   ├── 📄 EQUITY_L.csv
-│   ├── 🐍 ml_model.py
-│   ├── 🐍 predict_app.py
-│   └── 📄 requirements.txt
-│
-├── 📄 .gitignore            (Root gitignore for the whole project)
-└── 📄 readme.md
+          NSE_STOCK_PREDICTOR/
+          ├── 📁 assets/
+          │   ├── 🖼️ Screenshot 2025-0...png
+          │   ├── 🖼️ Screenshot 2025-0...png
+          │   ├── 🖼️ Screenshot 2025-0...png
+          │   ├── 🖼️ Screenshot 2025-0...png
+          │   ├── 🖼️ Screenshot 2025-0...png
+          │   ├── 🖼️ Screenshot 2025-0...png
+          │   └── 🖼️ Screenshot 2025-0...png
+          │
+          ├── 📁 frontend/
+          │   ├── 📁 node_modules/     (Ignored by git)
+          │   ├── 📁 public/
+          │   │   ├── 🖼️ bgvideo.mp4
+          │   │   ├── 🖼️ favicon.png
+          │   │   └── 🖼️ vite.svg
+          │   ├── 📁 src/
+          │   │   ├── 📁 assets/
+          │   │   │   └── 🖼️ react.svg
+          │   │   ├── 📁 components/
+          │   │   │   ├── 📄 About.jsx
+          │   │   │   ├── 📄 Auth.css
+          │   │   │   ├── 📄 LoginPage.jsx
+          │   │   │   ├── 📄 LoginPopup.css
+          │   │   │   ├── 📄 LoginPopup.jsx
+          │   │   │   ├── 📄 PanelToggle.jsx
+          │   │   │   ├── 📄 SearchBar.jsx
+          │   │   │   ├── 📄 SignupPage.jsx
+          │   │   │   ├── 📄 StockChart.jsx
+          │   │   │   ├── 📄 StockInfo.jsx
+          │   │   │   ├── 📄 TermsPage.css
+          │   │   │   └── 📄 TermsPage.jsx
+          │   │   ├── 📄 App.css
+          │   │   ├── 📄 App.jsx
+          │   │   ├── 📄 config.js
+          │   │   ├── 📄 index.css
+          │   │   ├── 📄 main.jsx
+          │   │   ├── 📄 style1.css
+          │   │   └── 📄 style2.css
+          │   ├── 📄 .gitignore
+          │   ├── 📄 index.html
+          │   ├── 📄 package-lock.json
+          │   ├── 📄 package.json
+          │   ├── 📄 README.md
+          │   └── 📄 vite.config.js
+          │
+          ├── 📁 server1/
+          │   ├── 🐍 auth_app.py
+          │   ├── 🐍 config.py
+          │   └── 📄 requirements.txt
+          │
+          ├── 📁 server2/
+          │   ├── 📁 __pycache__/      (Ignored by git)
+          │   ├── 🐍 config.py
+          │   ├── 📄 EQUITY_L.csv
+          │   ├── 🐍 ml_model.py
+          │   ├── 🐍 predict_app.py
+          │   └── 📄 requirements.txt
+          │
+          ├── 📄 .gitignore            (Root gitignore for the whole project)
+          └── 📄 readme.md
